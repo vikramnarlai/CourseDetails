@@ -1,0 +1,16 @@
+<div class="row container-fluid mt-4">
+    <div class="col-lg-4 col-md-6 col-sm-6 mb-4" *ngFor="let cInfo of resultData?.result">
+        <div class="card card-bg">
+            <div class="card-body">
+                <h4 class="card-title"><strong>{{cInfo.cname}}</strong></h4>
+                <div class="mt-2"><strong>Start Date: </strong> {{cInfo.start}}</div>
+                <div><strong>End Date: </strong> {{cInfo.end}}</div>
+                <div class="mt-2"><strong>Description: </strong> {{cInfo.cdescription}}</div>
+                <div class="text-center mt-3">
+                    <button class="btn btn-primary w-40" (click)="nagivateToDetails(cInfo)">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

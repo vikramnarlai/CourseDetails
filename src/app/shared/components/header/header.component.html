@@ -1,0 +1,33 @@
+<nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand">Logo</a>
+    <button class="navbar-toggler" type="button" (click)="openModal()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':display}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">User Info</h4>
+                    <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <span>User Name: Vikram Singh</span>
+                    </div>
+                    <div>
+                        <span>User Email: test@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" (click)="onLogout()">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</nav>

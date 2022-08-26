@@ -1,0 +1,30 @@
+<div class="row container-fluid mt-4">
+    <div class="col-lg-4 col-md-12 col-sm-6 mb-4" *ngFor="let details of cDetails?.cActicity">
+        <div class="card card-bg bg">
+            <div class="row">
+                <div class="col-2 mt-3">
+                    <span class="start"><img src="assets/study.png" height="50px" width="50px"></span>
+                </div>
+                <div class="card-body col-9">
+                    <div>
+                        <span>
+                            <h4 class="card-title"><strong>{{details.acitiviyName}}</strong></h4>
+                        </span>
+                    </div>
+                    <div class="mt-2">{{details.acitiviyDesc}}</div>
+                    <div class="end mt-3">
+                        <button class="btn btn-primary w-40">Launch</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="row container-fluid end mt-4">
+    <button class="btn btn-warning" (click)="navigateBack()"> Back</button>
+</div>
